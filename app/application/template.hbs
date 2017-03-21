@@ -1,5 +1,17 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+{{#bulma-nav hasShadow=true}}
+  <div class="container">
+    {{#bulma-nav-left}}
+      <a class="nav-item" href="#"><p class="logo">Razer Cars</p></a>
+    {{/bulma-nav-left}}
+
+    {{#bulma-nav-right}}
+
+        <a class="nav-item" href="#">Home</a>
+        <a class="nav-item trans" href="#">All Manufacturers</a>
+        <a class="nav-item trans" href="#">Add Manufacturer</a>
+
+    {{/bulma-nav-right}}
+  </div>
+{{/bulma-nav}}
 
 {{outlet}}
