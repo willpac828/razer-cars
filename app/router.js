@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  // instead of the routes array in vue
+  // these are automatically added for us!
+  this.route('index');
+  this.route('manufacturers');
+  this.route('manufacturers-new');
 });
 
 export default Router;

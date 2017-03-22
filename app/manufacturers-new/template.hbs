@@ -1,0 +1,19 @@
+
+<div class="container">
+  <form class="form" {{action "save" on="submit"}}>
+  <h1 class="header">Add a New Car</h1>
+    {{#bulma-control}}
+      {{bulma-input placeholder='companyName' value=formValues.companyName}}
+    {{/bulma-control}}
+
+    {{#bulma-control}}
+      {{bulma-input placeholder='ISO Country Code' value=formValues.isoCountryCode}}
+    {{/bulma-control}}
+
+    {{#bulma-control class="new-submit"}}
+      {{bulma-button label='Back'}}
+      {{bulma-button label='Submit' isDanger=true}}
+    {{/bulma-control}}
+  </form>
+</div>
+{{outlet}}

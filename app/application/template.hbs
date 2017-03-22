@@ -1,17 +1,19 @@
-{{#bulma-nav hasShadow=true}}
-  <div class="container">
-    {{#bulma-nav-left}}
-      <a class="nav-item" href="#"><p class="logo">Razer Cars</p></a>
-    {{/bulma-nav-left}}
+<div class="hero is-danger">
+  {{#bulma-nav hasShadow=true}}
+    <div class="container">
+      {{#bulma-nav-left}}
+        {{#link-to "index" class="nav-item"}}<p class="logo">Razer Cars</p>{{/link-to}}
+      {{/bulma-nav-left}}
 
-    {{#bulma-nav-right}}
+      {{#bulma-nav-right}}
 
-        <a class="nav-item" href="#">Home</a>
-        <a class="nav-item trans" href="#">All Manufacturers</a>
-        <a class="nav-item trans" href="#">Add Manufacturer</a>
+          {{#link-to "index" class="nav-item"}}Home{{/link-to}}
+          {{#link-to "manufacturers" class="nav-item trans"}}All Manufacturers{{/link-to}}
+          {{#link-to "manufacturers-new" class="nav-item trans"}}Add Manufacturer{{/link-to}}
 
-    {{/bulma-nav-right}}
-  </div>
-{{/bulma-nav}}
+      {{/bulma-nav-right}}
+    </div>
+  {{/bulma-nav}}
+</div>
 
 {{outlet}}
