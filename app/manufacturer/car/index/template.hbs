@@ -10,15 +10,17 @@
 
 
     <div class="grid">
-      <div class="grid__item">
-        {{#bulma-message class="car-card"}}
-          <div class="message-header"><p class="car-card__model">1998 - Toyota Osprey</p></div>
-          <div class="message-body">
-            <p class="spec">Mileage: 128k</p>
-            <p class="spec">Seats: 5</p>
-            <p class="spec">Price: $2,800</p>
-          </div>
-        {{/bulma-message}}
-      </div>
+      {{#each model.cars as |car|}}
+        <div class="grid__item">
+          {{#bulma-message class="car-card"}}
+            <div class="message-header"><p class="car-card__model">{{cars.year}} - {{cars.name}}</p></div>
+            <div class="message-body">
+              <p class="spec">Mileage: 128k</p>
+              <p class="spec">Seats: 5</p>
+              <p class="spec">Price: $2,800</p>
+            </div>
+          {{/bulma-message}}
+        </div>
+      {{/each}}
     </div>
 </div>

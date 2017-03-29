@@ -19,6 +19,7 @@ Router.map(function() {
   });
 
   this.route('manufacturers-new');
+  this.route('edit');
 });
 
 export default Router;

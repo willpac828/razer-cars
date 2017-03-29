@@ -2,7 +2,10 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
-  hp: DS.attr('number'),
+  mileage: DS.attr('number'),
   year: DS.attr('number'),
-  price: DS.attr('number')
+  seats: DS.attr('number'),
+  price: DS.attr('number'),
+
+  cars: DS.belongsTo('brand')
 });
