@@ -1,0 +1,14 @@
+.header {
+  font-size: 3rem;
+  font-family: $font-menu;
+}
+
+.form {
+  padding: $gutter;
+  border: 1px solid $border;
+  border-radius: 1rem;
+}
+
+.new-submit {
+  margin-top: $gutter * 2;
+}

@@ -1,0 +1,23 @@
+
+.new-car {
+  font-family: $font-menu;
+
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+  margin: $gutter;
+  flex-basis: calc(100% / 3 - 2rem);
+
+  }
+}
+
+.car-card {
+
+  &__model {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,15 @@
+// colors
+$white: #fff;
+$black: #000;
+$border: #73d3d9;
+
+$gutter: 1rem;
+
+$font-menu: 'Ranga', cursive;
+
+@import 'bulma';
+@import 'resets';
+@import 'application';
+@import 'index';
+@import 'manufacturers-new';
+@import 'car-index';

@@ -1,0 +1,19 @@
+<div class="hero is-danger">
+  {{#bulma-nav hasShadow=true}}
+    <div class="container">
+      {{#bulma-nav-left}}
+        {{#link-to "index" class="nav-item"}}<p class="logo">Razer Cars</p>{{/link-to}}
+      {{/bulma-nav-left}}
+
+      {{#bulma-nav-right}}
+
+          {{#link-to "index" class="nav-item"}}Home{{/link-to}}
+          {{#link-to "manufacturer" class="nav-item trans"}}All Manufacturers{{/link-to}}
+          {{#link-to "manufacturer.new" class="nav-item trans"}}Add Manufacturer{{/link-to}}
+
+      {{/bulma-nav-right}}
+    </div>
+  {{/bulma-nav}}
+</div>
+
+{{outlet}}

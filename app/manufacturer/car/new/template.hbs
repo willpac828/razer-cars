@@ -1,0 +1,33 @@
+<div class="container">
+  {{#bulma-message}}
+    <div class="message-header">Add New Car for Toyota</div>
+      <div class="message-body">
+        <form {{action "save" on="submit"}}>
+          <div class="control">
+            {{#bulma-control}}
+              {{bulma-input placeholder="Year" value=formValues.year}}
+            {{/bulma-control}}
+            {{#bulma-control}}
+              {{bulma-input placeholder="Model Name" value=formValues.name}}
+            {{/bulma-control}}
+            {{#bulma-control}}
+              {{bulma-input placeholder="Mileage" value=formValues.mileage}}
+            {{/bulma-control}}
+            {{#bulma-control}}
+              {{bulma-input placeholder="Seats" value=formValues.seats}}
+            {{/bulma-control}}
+            {{#bulma-control}}
+              {{bulma-input placeholder="Price" value=formValues.price}}
+            {{/bulma-control}}
+
+            {{#bulma-control}}
+              {{bulma-button label="Go Back"}}
+              {{bulma-button isDanger=true label="Submit"}}
+            {{/bulma-control}}
+        </div>
+      </form>
+    </div>
+  {{/bulma-message}}
+
+
+</div>

@@ -1,0 +1,24 @@
+<div class="container">
+  {{#bulma-message}}
+    <div class="message-header">
+      <h2>Hey there stranger!</h2>
+
+    </div>
+    <div class="message-body">
+
+      <p>
+        We think you'll fall in love with <span class="em">Razer Cars</span>.
+      </p>
+      <p><span class="em">You</span> just gotta give <span class="em">us</span> a try!</p>
+      <p>
+        Feel free to mull about our site and shoot us an e-mail if you have any questions!
+      </p>
+
+      <div class="content">
+        {{#link-to "manufacturer"}}
+        {{bulma-button label="See All Manufacturers" isDanger=true class="index-button"}}
+        {{/link-to}}
+      </div>
+    </div>
+  {{/bulma-message}}
+</div>

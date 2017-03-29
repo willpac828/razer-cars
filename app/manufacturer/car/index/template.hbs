@@ -1,0 +1,26 @@
+<div class="container">
+  {{#bulma-message class="new-car"}}
+    <div class="message-header">Toyota</div>
+      <div class="message-body">
+        <div class="content is-text-right new-car">
+          {{bulma-button icon="fa fa-plus" label="Add New Car" isDanger=true}}
+        </div>
+      </div>
+  {{/bulma-message}}
+
+
+    <div class="grid">
+      {{#each model.cars as |car|}}
+        <div class="grid__item">
+          {{#bulma-message class="car-card"}}
+            <div class="message-header"><p class="car-card__model">{{car.year}} - {{car.name}}</p></div>
+            <div class="message-body">
+              <p class="spec">{{car.mileage}}</p>
+              <p class="spec">{{car.seats}}</p>
+              <p class="spec">{{car.price}}</p>
+            </div>
+          {{/bulma-message}}
+        </div>
+      {{/each}}
+    </div>
+</div>
